@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Starter Code</title>
+    <style>
+   
+      button {
+        padding: 5px;
+        font-size: 16px;
+        font-family: monospace;
+        text-transform: uppercase;
+        background-color: lightblue;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: #333;
+        color: #fff;
+      }
+
+      #gif {
+     position: center;
+     width: 90%;
+
+    }
+
+    </style>
+
+    <script>
+
+      var channel = 0;
+		  var images = ["1.gif", "2.gif", "3.gif", "4.gif", "5.gif"];
+      
+      function handleClick() {
+				channel = [Math.floor(Math.random()*images.length)];
+				return channel;
+        var img = document.getElementById(gif);
+        document.getElementById("gif").src = images[channel];
+      
+			};
+    document.getElementById("button").onclick = function(){
+    handleClick();}
+  </script>
+    </head>
+
+<body>
+<div class="button-container">
+    <button id="button">Click Me</button>
+  </div>
+<img id="gif" src="1.gif">
+    
+  </body>
+</html>

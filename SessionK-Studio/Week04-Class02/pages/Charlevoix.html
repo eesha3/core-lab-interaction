@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Charlevoix</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+</style>
+</head>
+<body>
+<h3>Charlevoix Station, Montreal, Canada</h3>
+<div id="information">
+  Designed by Ayotte et Bergeron, it was built as a stacked platform station, in order to reduce the width of the station owing to the weak Utica Shale in which it was built. The lower (Honoré-Beaugrand) platform is 29.6 m (97 ft 1 in) below the surface, making this the deepest station in the network, as well as the lowest in altitude (the lower platform is below sea level).<br><br>The station has one ticket hall and one access. The long stairways to the platforms, built around a light shaft, are brightened by two stained-glass windows by Mario Merola and Pierre Osterrath.
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/Charlevoix.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Charlevoix2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Charlevoix3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Charlevoix4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
+</body>
+</html>

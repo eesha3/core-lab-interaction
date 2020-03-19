@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BurJuman</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; }
+
+</style>
+</head>
+<body>
+<h3>Khalid Bin Al Waheed Station (BarJuman Stop), Dubai</h3>
+<div id="information">
+  Two major metro stations in Dubai, Khalid Bin Al Waleed Station and Al Rigga Station, have accented their modern look with impressive decorative light fixtures designed by Lasvit. Busy servicing tourists, businesspeople, politicians, shoppers, and others, The Dubai Metro stations are seen and visited by countless people on a daily basis.<br><br>
+  The beautiful Water lighting sculpture, graces the ceilings of the Khalid Bin Al Waleed Station. Two parts make up Water, which has come to be coined “a giant jellyfish” by the public. The base features textured bent glass that connects to the second part – a stylized waterfall phased into hand-blown, hollow glass drops.
+  
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/BurJuman.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/BurJuman2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/BurJuman3.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
+</body>
+</html>
