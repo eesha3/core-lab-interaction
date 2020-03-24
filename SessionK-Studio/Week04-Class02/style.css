@@ -11,20 +11,24 @@ body {
   
 }
 
-h3 {
- font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
- font-weight: normal;
- padding: 10px 10px 10px 10px;
-font-size: 1.75em;
- letter-spacing: .2em;
- line-height: 1.1em;
+.heading {
+ /*padding: 0px 0px 100vh 0px;*/
  margin:0px;
  text-align: center;
- text-transform: uppercase;
  position: absolute;
  justify-content: center;
  align-items: center;
- background-color: #C2E5E8;
+ width: 100vw;
+}
+
+h3 {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ text-transform: uppercase;
+ margin-top: 15px;
 }
 
 .container {
@@ -67,7 +71,7 @@ font-size: 1.75em;
     transition: all .3s ease;;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   transform: scale(1);
-  animation: pulse 2s infinite;
+  animation: pulse 1.5s infinite;
   }
 
 .point:hover {

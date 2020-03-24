@@ -1,10 +1,98 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Map</title>
+  <title>T-Centralen</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+</style>
 </head>
 <body>
-<img src="../images/Bockenheimer.jpg">
-</p>
+<h3>T-Centralen Metro Station, Stockholm, Sweden</h3>
+<div id="information">
+T-Centralen, the main hub of Stockholm’s subway, opened up for traffic in 1957 and was the first station to feature artwork. The blue line-platform, quite literally “the blue platform” is hands down one of the public transport system’s most recognizable places. But it didn’t open until 1975 when the blue line to Hjulsta was completed.
+<br> <br>
+ The artist, Per Olof Ultvedt not only chose the blue shades based on their aesthetic values but also their relaxing effect. He wanted to create a calming atmosphere because this is a station where people are in a hurry. The blue color together with the simple motifs – stylized flowers and leaf creepers – gives passengers a pause and chance to clear their mind.
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/T-Centralen.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/T-Centralen2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/T-Centralen3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/T-Centralen4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
 </body>
 </html>

@@ -1,10 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Map</title>
+  <title>Radhuset</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+</style>
 </head>
 <body>
-<img src="../images/Aalto.jpg">
-</p>
+<h3>Rådhuset Metro Station, Stockholm, Sweden</h3>
+<div id="information">
+Rådhuset metro station is a rapid transit station in Kungsholmen in central Stockholm, part of the Stockholm metro. Like some other stations on the Stockholm metro, it uses organic architecture, which leaves the bedrock exposed and unsculptured, appearing to be based on natural cave systems.
+<br> <br>
+ The architect for the station was SL arkitektkontor through Michael Granit and Per H. Reimers. The station opened on 31 August 1975. The underground station is named after Rådhuset (The Court House) right above the surface. up towards Karlbergsvägen and Odenplan and authorize, clearly building entrances.
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/Radhuset.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Radhuset2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Radhuset3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Radhuset4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
 </body>
 </html>
