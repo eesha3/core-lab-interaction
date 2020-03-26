@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parque Lisbon Station</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+</style>
+</head>
+<body>
+<h3>Parque Lisbon Station, Lisbon, Portugal</h3>
+<div id="information">
+  Parque Station on the Blue Line (Linha Azul) of the Lisbon metro is famous for its azulejo tiles that reference the work of the writer Fernando Pessoa and others. Architect Francisco Keil do Amaral designed the model for these stations, which was used for all subsequent stations built on the Lisbon metro until 1972. The original eleven stations, except Avenida, all had artwork by painter Maria Keil. <br><br>
+  Parque Station was refurbished by artists Françoise Schein and Federica Matta. They created the blue cathedral at Parque with 450,000 hand-painted tiles in 1994. There are maps of the world inspired by Portugal's Age of the Discoveries period juxtaposed with quotes with an emphasis on human rights by such writers as Lao-Tse, Plato and Gilles Deleuze, author of Capitalism and Schizophrenia.
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/Parque-Lisbon.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Parque-Lisbon2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Parque-Lisbon3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Parque-Lisbon4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
+</body>
+</html>

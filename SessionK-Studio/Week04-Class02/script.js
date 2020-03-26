@@ -1,8 +1,7 @@
 $(document).ready(function(){
-  $("#hide").click(function(){
-    $("p").hide();
-  });
-  $("#show").click(function(){
-    $("p").show();
-  });
+    tippy('.tippy', {
+      theme: 'light',
+      size: 'big',
+      arrow: true
+    })
 });

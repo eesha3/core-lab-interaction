@@ -1,10 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Map</title>
+  <title>Urheilupuisto Station</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+</style>
 </head>
 <body>
-<img src="../images/Taiwan.jpg">
-</p>
+<h3>Urheilupuisto Metro Station, Helsinki, Finland</h3>
+<div id="information">
+  Urheilupuisto metro station is situated in Niittymaa, at the northern edge of Jousenpuisto Park, south of the sports grounds. The themes of the station are energy, motion, youth, strength, growth and colour. Unlike other West Metro stations, Urheilupuisto metro station is not constructed in bedrock. The station building is designed to allow daylight to reach the escalators all the way to the platform level. <br><br>
+  Tapiola’s Urheilupuisto area is a centre of physical fitness and top-level sports that is suited to sports-minded people and armchair athletes alike. The metro station was designed by Arkkitehtitoimisto HKP Oy.
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/Urheilupuisto.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Urheilupuisto2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Urheilupuisto3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Urheilupuisto4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
 </body>
 </html>

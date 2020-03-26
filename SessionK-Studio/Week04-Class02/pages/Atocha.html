@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atocha Station</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+</style>
+</head>
+<body>
+<h3>Madrid Atocha, Madrid, Spain</h3>
+<div id="information">
+ The Atocha Train Station in Madrid is not just a transportation hub, it's also home to an indoor botanical garden and turtle sanctuary! Opened in 1992, rows of tropical trees and plants stretch out over 13,000 feet of space beneath the station’s arched roof. Commuters can relax under the leafy palms, or watch the turtle pond while waiting for their next train.<br><br>
+  The original station dates to 1851, and it was rebuilt in 1892 after a fire. Sprawling underneath a lengthy skylight, the indoor garden occupies the area that used to house the old train landings prior to Atocha’s expansion.
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/Atocha.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Atocha2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Atocha3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Atocha4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
+</body>
+</html>

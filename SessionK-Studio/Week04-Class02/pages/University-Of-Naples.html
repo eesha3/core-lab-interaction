@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>University of Naples Station</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+</style>
+</head>
+<body>
+<h3>University of Naples Station, Naples, Italy</h3>
+<div id="information">
+ The University of Naples station is highly trafficked by a multi-cultural, academic community of thousands of passengers a day. A creative concept that communicates and embodies knowledge in the new digital age, language in the shrinking global landscape, innovation and mobility in this third technological revolution. This is the changing Italy and the station is a metaphor of this new wired global condition. It integrates the station with its surroundings, as well as provides a platform for innovative, cutting-edge design strategy.<br><br>
+New York designer Karim Rashid renovated the University of Naples subway station in Naples, Italy. Commuters pass between huge columns with the profiles of faces towards a shifting lenticular wall of graphic patterns. Sculptures and graphic artworks line the escalators.
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/University-Of-Naples.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/University-Of-Naples2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/University-Of-Naples3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/University-Of-Naples4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
+</body>
+</html>

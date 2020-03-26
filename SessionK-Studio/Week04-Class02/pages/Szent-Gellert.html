@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Szent Gellert Station</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+</style>
+</head>
+<body>
+<h3>Szent Gellert Station, Budapest, Hungary</h3>
+<div id="information">
+  The Szent Gellért tér station is on the bank of the Danube and is composed of a cut-and-cover box and tunnels. The box is supported by levels of reinforced concrete beams; the resulting structure is similar to a net, like a bone or skeletal system. The architectural and structural concept based on random beam grid and the underground bone texture combined with the organically implemented construction system were compatible without compromises with the often volatile and changing conditions of the planning and building processes. <br><br>
+  
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/Szent-Gellert.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Szent-Gellert2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Szent-Gellert3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Szent-Gellert4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
+</body>
+</html>

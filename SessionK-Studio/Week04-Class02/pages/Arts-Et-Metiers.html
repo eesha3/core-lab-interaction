@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arts et Metiers</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+</style>
+</head>
+<body>
+<h3>Arts et Métiers Station, Paris, France</h3>
+<div id="information">
+  This Jules Verne-inspired station takes you to the parallel universe of artist François Schuiten. This submarine décor plunges visitors deep inside mysterious machinery from a faraway past or unknown future. Platforms at this unique Line 11 station were redesigned in 1994 for the bicentenary of the National Conservatory of Arts and Trades (CNAM) by Belgian artist François Schuiten.<br><br>
+  The 800 studded copper panels covering the walls are reminiscent of the Nautilus, the vessel in Jules Verne’s classic novels 20,000 Leagues Under the Sea (1869) and The Mysterious Island (1874). Everything, from furnishings, station signs to garbage cans were created specifically for the station.
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/Arts-Et-Metiers.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Arts-Et-Metiers2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Arts-Et-Metiers3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Arts-Et-Metiers4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
+</body>
+</html>

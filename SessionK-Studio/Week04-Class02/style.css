@@ -64,8 +64,8 @@ h3 {
 .point {
     cursor: pointer;
     position: absolute;
-    width: 1rem;
-    height: 1rem;
+    width: 1vw;
+    height: 2vh;
     background-color: #00acc1;
     border-radius: 50%;
     transition: all .3s ease;;
@@ -91,6 +91,8 @@ p:hover {
 }
 
   .Aalto { top: 54%; left: 24%; }
+  .Arts-Et-Metiers { top: 50%; left: 24%; }
+  .Atocha { top: 54%; left: 10%; }
   .Bockenheimer { top: 64%; left: 28%; }
   .BurJuman { top: 77%; left: 27%; }
   .Canary-Wharf { top: 55%; left: 21%; }
@@ -98,17 +100,25 @@ p:hover {
   .City-Ring { top: 38%; left: 12%; }
   .De-Castelnau { top: 26%; left: 17%; }
   .Formosa-Boulevard { top: 40%; left: 53%; }
+  .Kiyevskaya { top: 30%; left: 20%; }
   .Kungsträdgården { top: 31%; left: 57%; }
+  .Marienplatz { top: 10%; left: 57%; }
   .Odenplan { top: 16%; left: 67%; }
+  .Olaias { top: 16%; left: 80%; }
+  .Parque-Lisbon { top: 42%; left: 86%; }
   .Place-Saint-Henri { top: 40%; left: 72%; }
   .Radhuset { top: 34%; left: 86%; }
+  .Sao-Bento { top: 14%; left: 66%; }
+  .Slavyansky-Bulvar { top: 34%; left: 26%; }
+  .Szent-Gellert { top: 34%; left: 56%; }
   .T-Centralen { top: 12%; left: 86%; }
   .Taiwan { top: 72%; left: 86%; }
   .Tapiola { top: 60%; left: 46%; }
   .Toledo-Station { top: 32%; left: 56%; }
-  .Turtle-Lisbon { top: 42%; left: 86%; }
+  .University-Of-Naples { top: 22%; left: 16%; }
   .Urheilupuisto { top: 62%; left: 76%; }
   .Warsaw { top: 72%; left: 20%; }
+  .Wilhelminaplein { top: 72%; left: 40%; }
   .Wynyard-Station { top: 72%; left: 14%; }
 
 }

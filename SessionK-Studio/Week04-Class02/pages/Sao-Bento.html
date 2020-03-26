@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>São Bento Station</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+</style>
+</head>
+<body>
+<h3>São Bento Station, Porto, Portugal</h3>
+<div id="information">
+  São Bento is Porto's central station, although the exterior of this grand building barely hints at its purpose. Completed in 1916 the station is built on the site of a 16th century Benedictine monastery - from which the name São Bento is derived. The monastery itself was almost destroyed by fire in 1783, and despite being rebuilt was barely standing at the end of the 19th century. <br><br>
+  São Bento Railway Station was designed by a local architect, José Marques da Silva, with much of the influence coming from the French Beaux-Arts style. Perhaps the best-known feature of the Estação de São Bento is the magnificent tilework in the main vestibule by Jorge Colaço. They consist of 20 thousand tiles and depict a range of historic events along with scenes of Portuguese life and the history of transport. 
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/Sao-Bento.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Sao-Bento2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Sao-Bento3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Sao-Bento4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
+</body>
+</html>

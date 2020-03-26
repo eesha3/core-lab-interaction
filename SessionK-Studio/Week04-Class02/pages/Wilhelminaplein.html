@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wilhelminaplein Station</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 40vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+</style>
+</head>
+<body>
+<h3>Wilhelminaplein Metro Station, Rotterdam, Netherlands</h3>
+<div id="information">
+  ZJA provided the design of the new subway station, one of the first commissions for this brand new firm at that time. Whenever we are amongst a multitude of people in an underground train, we would like the physical and sensory experience of the stations to be as pleasant, safe and comfortable as possible. Light, overview, an immediate understanding of the functional lay out, a sense of distance and depth and the continuous possibility of eye contact with others are the main ingredients of that.<br><br>
+  he way Station Wilhelminaplein is designed by ZJA does not result in a feeling of entering a deep and sinister cave. The hall at the entrance is high and has a monumental effect. The opening in the centre of the roof and the transparent glass entrances allow daylight to stream in. 
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/Wilhelminaplein.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Wilhelminaplein2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Wilhelminaplein3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Wilhelminaplein4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
+</body>
+</html>
