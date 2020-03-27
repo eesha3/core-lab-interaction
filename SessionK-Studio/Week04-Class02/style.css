@@ -64,8 +64,8 @@ h3 {
 .point {
     cursor: pointer;
     position: absolute;
-    width: 1vw;
-    height: 2vh;
+    width: 0.8vw;
+    height: 1.4vh;
     background-color: #00acc1;
     border-radius: 50%;
     transition: all .3s ease;;
@@ -104,35 +104,35 @@ p {
  background-color: white;
 }
 
-  .Aalto { top: 54%; left: 24%; }
-  .Arts-Et-Metiers { top: 50%; left: 24%; }
-  .Atocha { top: 54%; left: 10%; }
-  .Bockenheimer { top: 64%; left: 28%; }
-  .BurJuman { top: 77%; left: 27%; }
-  .Canary-Wharf { top: 55%; left: 21%; }
-  .Charlevoix { top: 51%; left: 18%; }
-  .City-Ring { top: 38%; left: 12%; }
-  .De-Castelnau { top: 26%; left: 17%; }
-  .Formosa-Boulevard { top: 40%; left: 53%; }
-  .Kiyevskaya { top: 30%; left: 20%; }
-  .Kungsträdgården { top: 31%; left: 57%; }
-  .Marienplatz { top: 10%; left: 57%; }
-  .Odenplan { top: 16%; left: 67%; }
-  .Olaias { top: 16%; left: 80%; }
-  .Parque-Lisbon { top: 42%; left: 86%; }
-  .Place-Saint-Henri { top: 40%; left: 72%; }
-  .Radhuset { top: 34%; left: 86%; }
-  .Sao-Bento { top: 14%; left: 66%; }
-  .Slavyansky-Bulvar { top: 34%; left: 26%; }
-  .Szent-Gellert { top: 34%; left: 56%; }
-  .T-Centralen { top: 12%; left: 86%; }
-  .Taiwan { top: 72%; left: 86%; }
-  .Tapiola { top: 60%; left: 46%; }
-  .Toledo-Station { top: 32%; left: 56%; }
-  .University-Of-Naples { top: 22%; left: 16%; }
-  .Urheilupuisto { top: 62%; left: 76%; }
-  .Warsaw { top: 72%; left: 20%; }
-  .Wilhelminaplein { top: 72%; left: 40%; }
-  .Wynyard-Station { top: 72%; left: 14%; }
+  .Aalto { top: 20%; left: 51%; }
+  .Arts-Et-Metiers { top: 26%; left: 44%; }
+  .Atocha { top: 30%; left: 43%; }
+  .Bockenheimer { top: 23%; left: 47%; }
+  .BurJuman { top: 41%; left: 61%; }
+  .Canary-Wharf { top: 24%; left: 44%; }
+  .Charlevoix { top: 26%; left: 23%; } 
+  .City-Ring { top: 21%; left: 46.5%; }
+  .De-Castelnau { top: 26%; left: 22%; } 
+  .Formosa-Boulevard { top: 41%; left: 83%; }
+  .Kiyevskaya { top: 23%; left: 54%; }
+  .Kungsträdgården { top: 20%; left: 49%; }
+  .Marienplatz { top: 26%; left: 47%; }
+  .Odenplan { top: 18.5%; left: 48%; }
+  .Olaias { top: 31.8%; left: 41.5%; }
+  .Parque-Lisbon { top: 33%; left: 41.5%; }
+  .Place-Saint-Henri { top: 24%; left: 23%; } 
+  .Radhuset { top: 18.5%; left: 49%; }
+  .Sao-Bento { top: 30.5%; left: 41.5%; }
+  .Slavyansky-Bulvar { top: 23%; left: 55%; }
+  .Szent-Gellert { top: 25.5%; left: 49.5%; }
+  .T-Centralen { top: 20%; left: 48%; }
+  .Taiwan { top: 42%; left: 82%; }
+  .Tapiola { top: 19%; left: 52%; }
+  .Toledo-Station { top: 30%; left: 49%; }
+  .University-Of-Naples { top: 32%; left: 49%; }
+  .Urheilupuisto { top: 18%; left: 51%; }
+  .Warsaw { top: 23%; left: 50%; }
+  .Wilhelminaplein { top: 24.5%; left: 45.5%; }
+  .Wynyard-Station { top: 76%; left: 91%; }
 
 }
