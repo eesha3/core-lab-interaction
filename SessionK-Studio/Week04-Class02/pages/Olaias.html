@@ -7,6 +7,9 @@
 @import url(https://fonts.googleapis.com/css?family=Istok+Web);
 @keyframes slidy {
 
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+
 0% { left: 0%; opacity: 0; }
 
 5% {opacity: 1;}
@@ -27,6 +30,7 @@
 
 100% { left: -300%; opacity: 0 }
 
+}{ left: -400%; }
 }
 * {
   box-sizing: border-box;
@@ -45,7 +49,12 @@ font-size: 1.75em;
  line-height: 1.1em;
  margin:0px;
  text-align: center;
+ justify-content: center;
  text-transform: uppercase;
+ position:absolute;
+ z-index: 5;
+ background-color: white;
+ width: 100vw;
 }
 
 div#information {
@@ -83,11 +92,9 @@ figure.slider img { width: 100vw; height: 100vh;}
 
 .home-icon {
   width: 3vw;
-  position: relative;
-  z-index: 2px;
-  bottom: -50px;
-  left: 10px;
   margin-top: 0px;
+   position:fixed;
+ z-index: 10;
 }
 
 </style>
