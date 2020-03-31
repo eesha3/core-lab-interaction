@@ -27,6 +27,7 @@
 
 100% { left: -300%; opacity: 0 }
 
+}{ left: -400%; }
 }
 * {
   box-sizing: border-box;
@@ -45,7 +46,12 @@ font-size: 1.75em;
  line-height: 1.1em;
  margin:0px;
  text-align: center;
+ justify-content: center;
  text-transform: uppercase;
+ position:absolute;
+ z-index: 5;
+ background-color: white;
+ width: 100vw;
 }
 
 div#information {
@@ -81,12 +87,24 @@ figure.slider figure {
 }
 figure.slider img { width: 100vw; height: 100vh;}
 
+.home-icon {
+  width: 3vw;
+  margin-top: 0px;
+   position:fixed;
+ z-index: 10;
+}
+
+div#information:hover {
+  opacity:0;
+
 </style>
 </head>
 <body>
-<h3>Bockenheimer Warte Station, Frankfurt, Germany</h3>
+  <a href="../index.html"><img class="home-icon" src="../images/home.jpg"></a>
+<h3>Bockenheimer Warte Subway Station, Frankfurt, Germany</h3>
 <div id="information">
-  Bockenheimer
+  Frankfurt has given us the option of living this fantasy every day with the eclectic design of its Bockenheimer Warte train station wherein the entrance appears for all the world like a flying tram car has either nosedived into the pavement or is casually erupting out of it, to great artistic effect. This chimerical triumph of engineering located in the Frankfurt city center was designed by Polish architect Zbigniew Peter Pininski in 1986, way ahead of the recent global trend in making travel depots into aesthetic events. Pininski possessed an inventor's eye but an artist's heart and is said to have taken inspiration from the Belgian Surrealist artist, René Magritte. <br><br>
+  The Bockenheimer Warte station certainly presents a sense of mischief delightfully unmanaged as you descend the staircase past fantastic rubble at a capricious slant reminiscent of an asymmetry you might associate with the Queen's hedgerows from Alice in Wonderland. 
 </div>
 <div id="gallery">
   <figure class="slider">

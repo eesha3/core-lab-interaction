@@ -1,10 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Map</title>
+  <title>Place Saint Henri</title>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+
+0% { left: 0%; opacity: 0; }
+
+5% {opacity: 1;}
+
+25% { left: 0%; }
+
+30% { left: -100%; }
+
+50% { left: -100%; }
+
+55% { left: -200%; }
+
+75% { left: -200%; }
+
+80% { left: -300%; }
+
+95% { left: -300%; opacity: 1; }
+
+100% { left: -300%; opacity: 0 }
+
+}{ left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+h3 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ text-align: center;
+ justify-content: center;
+ text-transform: uppercase;
+ position:absolute;
+ z-index: 5;
+ background-color: white;
+ width: 100vw;
+}
+
+div#information {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ padding: 10px 10px 10px 10px;
+font-size: 1em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px;
+ background-color: rgba(255,255,255,0.5);
+  float: left;
+       position: fixed;
+       left: 100px;
+       top: 200px;
+       z-index: 1000;
+ width: 35vw;
+ height: 40vh;
+ text-align: center;
+ justify-content: center;
+}
+
+div#gallery { 
+  width: 100vw; height: 100vh; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100vw; height: 100vh;}
+
+.home-icon {
+  width: 3vw;
+  margin-top: 0px;
+   position:fixed;
+ z-index: 10;
+}
+
+div#information:hover {
+  opacity:0;
+
+
+</style>
 </head>
 <body>
-<img src="../images/Warsaw.jpg">
-</p>
+  <a href="../index.html"><img class="home-icon" src="../images/home.jpg"></a>
+<h3>Place Saint Henri Station, Montreal, Canada</h3>
+<div id="information">
+  Place-Saint-Henri station is a Montreal Metro station in the borough of Le Sud-Ouest in Montreal, Quebec, Canada. It is operated by the Société de transport de Montréal (STM) and serves the Orange Line. It is located in the Saint-Henri neighbourhood. <br><br>
+
+  The station was designed by Julien Hébert and Jean-Louis Lalonde. It originally contained two artworks: a mural by Hébert in the mezzanine, entitled Bonheur d'occasion, featuring the title of the famous book by Gabrielle Roy, set in the neighbourhood; and a motorized mobile sculpture by Jacques de Tonnancour suspended in the mezzanine and over the platforms. A statue of Jacques Cartier by Joseph-Arthur Vincent, created in 1896, was moved to the station and placed in a light shaft over the Côte-Vertu platform. 
+</div>
+<div id="gallery">
+  <figure class="slider">
+    <figure>
+      <img src="../images/Place-Saint-Henri.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Place-Saint-Henri2.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Place-Saint-Henri3.jpg" alt>
+    </figure>
+    <figure>
+      <img src="../images/Place-Saint-Henri4.jpg" alt>
+    </figure>
+  </figure>
+</div>
+
 </body>
 </html>
