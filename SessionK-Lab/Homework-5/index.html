@@ -34,12 +34,12 @@
 
     <p>First, a basic test: look in the code and console when you change the value</p>
     <select onchange="testFilter()">
-      <option disabled selected>Filter out your worst year!</option>
-      <option value="2019">2019</option>
-      <option value="2018">2018</option>
-      <option value="2017">2017</option>
-      <option value="2016">2016</option>
-      <option value="2015">2015</option>
+      <option disabled selected>Filter out your worst color!</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
+      <option value="red">Red</option>
+      <option value="orange">Orange</option>
     </select>
     <br />
     <br />
@@ -49,10 +49,10 @@
     </p>
 
     <select name="filter-images" id="filter" onchange="filteredList()">
-      <option value="2020">All</option>
-      <option value="2000">Before 2000</option>
-      <option value="1900">Before 1900</option>
-      <option value="1800">Before 1800</option>
+      <option value="blue, green, yellow, red, orange">All</option>
+      <option value="blue, yellow, red">Primary Colors</option>
+      <option value="green, orange">Secondary Colors</option>
+      <option value="blue">My Favorite Color</option>
     </select>
 
     <div id="container">
@@ -61,15 +61,15 @@
 
     <script>
       // basic filter example (forget about HTML, this is just arrays in JavaScript)
-      var years = [2019, 2018, 2017, 2016, 2015]; // array of years
-      console.log('years', years);
-      var WORSTYEAREVER = 2016; // i wish this year would go away! Let's filter it out of our list of years
+      var colors = [blue, green, yellow, red, orange]; // array of years
+      console.log('colors', colors);
+      var WORSTCOLOREVER = yellow; // i wish this year would go away! Let's filter it out of our list of years
 
       // I create a NEW variable equal to the result of the filter. This RETURN a new array without 2016
-      var filterOut2016 = years.filter(year => {
-        return year !== 2016;
+      var filterOutYellow = colors.filter(color => {
+        return color !== yellow;
       });
-      console.log('filtered years without 2016', filterOut2016); // expected value: [2020, 2019, 2018, 2015]
+      console.log('filtered colors without yellow', filterOutYellow); // 
 
       //
       //
@@ -84,8 +84,8 @@
         console.log('test dropdown value:', filterValue);
 
         // same concept as above, except we use the filterValue variable which is set every time the dropdown is changed
-        var testFilterList = years.filter(year => {
-          return year !== filterValue;
+        var testFilterList = colors.filter(color => {
+          return color !== filterValue;
         });
         console.log('test filter list:', testFilterList);
       }
@@ -102,12 +102,13 @@
       // };
       // let's create an array of objects for each item
       var archiveItems = [
-        { imageURL: 'image-1.jpg', year: 2019, title: 'something from 2019' },
-        { imageURL: 'image-2.jpg', year: 2001, title: 'a sculpture' },
-        { imageURL: 'image-3.jpg', year: 1943, title: 'an album' },
-        { imageURL: 'image-4.jpg', year: 1902, title: 'a painting' },
-        { imageURL: 'image-5.jpg', year: 1834, title: 'another thing' },
-        { imageURL: 'image-6.jpg', year: 1750, title: 'something else' }
+        { imageURL: 'ocean.jpg', color: blue, title: 'the ocean' },
+        { imageURL: 'blueberries.jpg', color: blue, title: 'blueberries' },
+        { imageURL: 'kiwis.jpg', color: green, title: 'kiwis' },
+        { imageURL: 'garden.jpg', color: green, title: 'a garden entrance' },
+        { imageURL: 'sunflowers.jpg', color: yellow, title: 'sunflowers' },
+        { imageURL: 'ladybug.jpg', color: red, title: 'a ladybug' }
+        { imageURL: 'autumn.jpg', color: orange, title: 'autumn season' }
       ];
 
       // get the single container (notice we don't need querySelectorAll since there's only 1 container element)
@@ -121,7 +122,7 @@
         // 2.
         var updatedItems = archiveItems.filter(item => {
           // we can test is an item is equal to "===" , less than "<", greater than ">" , etc.
-          return item.year < filterValue; // each item is added (RETURN) to the new array IF it passes the test: is the year less than the dropdown year?
+          return item.color < filterValue; // each item is added (RETURN) to the new array IF it passes the test: is the year less than the dropdown year?
         });
 
         // 3.
@@ -134,7 +135,7 @@
           <div>
             <img src="images/${item.imageURL}" class="image"/>
             <h5>${item.title}</h5>
-            <p>${item.year}</p>
+            <p>${item.color}</p>
             </div>
             `;
           // tip: using "innerHTML += " will keep adding HTML every time it loops through the forEach

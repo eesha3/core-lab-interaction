@@ -31,10 +31,6 @@
 
     <div id="container">
       <div class="item"><img src="1.gif"></div>
-      <div class="item"><img src="2.gif"></div>
-      <div class="item"><img src="3.gif"></div>
-      <div class="item"><img src="4.gif"></div>
-      <div class="item"><img src="5.gif"></div>
     </div>
 
     <script>
@@ -42,7 +38,7 @@
 
       function handleClick() {
         items.forEach((item, i) => {
-          var randomGenerator = Math.ceil(Math.random() * items.length);
+          var randomGenerator = Math.ceil(Math.random() * 5);
           item.innerHTML = `<img src="${randomGenerator}.gif" class="image"/>`;
         });
       }
