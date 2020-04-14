@@ -160,7 +160,7 @@ div {
   and (device-height : 896px) 
   and (-webkit-device-pixel-ratio : 2)
   and (orientation: portrait) { 
-    #aries #taurus #gemini #cancer #leo #virgo #libra #scorpio #sagittarius #capricon #aquarius #pisces {
+    #aries, #taurus, #gemini, #cancer, #leo, #virgo, #libra, #scorpio, #sagittarius, #capricon, #aquarius, #pisces {
              display: none;
         }
 }
