@@ -154,24 +154,23 @@ div {
 #pisces .zodiac-gradient { background: linear-gradient(141deg, rgba(54,209,220,.5) 0%, rgba(91,134,229,.5) 100%); }
 
 
+#sagittarius2 {
+           display: none;
+        }
+
 /*iPhone XR (Portrait) */
 @media only screen 
-  and (device-width : 414px) 
-  and (device-height : 896px) 
-  and (-webkit-device-pixel-ratio : 2)
-  and (orientation: portrait) { 
-    #aries, #taurus, #gemini, #cancer, #leo, #virgo, #libra, #scorpio, #sagittarius, #capricon, #aquarius, #pisces {
+  and (min-device-width: 375px) 
+  and (max-device-height: 812px) 
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {  {
+    #aries, #taurus, #gemini, #cancer, #leo, #virgo, #libra, #scorpio, #sagittarius, #capricorn, #aquarius, #pisces {
              display: none;
         }
+    #sagittarius2 {
+          display: block;
+    }
 }
 
-/*Laptop Retina Screen*/
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-    #sagittarius2 {
-             display: none;
-        }
+
 }
