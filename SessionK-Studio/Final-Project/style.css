@@ -2,14 +2,18 @@
 body {
   margin: 0;
   background-color: black;
-  align-items: center;
-  justify-content: center;
 }
 
-div {
+/*div {
   position: center;
 }
-
+*/
+.container {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
 
 #aries, #taurus, #gemini, #cancer, #leo, #virgo, #libra, #scorpio, #sagittarius, #capricorn, #aquarius, #pisces { 
   display: inline-block; 
@@ -124,7 +128,7 @@ div {
   top: 10px;
   left: 10px;
 
-}
+} 
 
 
 @font-face { font-family: "shopping"; src: url('https://dl.dropboxusercontent.com/s/mbyg0g1cianbljw/Shopping%20Script%20Demo.ttf'); format("truetype");}
@@ -153,24 +157,149 @@ div {
 
 #pisces .zodiac-gradient { background: linear-gradient(141deg, rgba(54,209,220,.5) 0%, rgba(91,134,229,.5) 100%); }
 
+#sagittarius2 .zodiac-gradient { background: linear-gradient(141deg, rgba(92,37,141,.5) 0%, rgba(67,137,162,.5) 100%); }
+
 
 #sagittarius2 {
            display: none;
         }
 
-/*iPhone XR (Portrait) */
+video {
+           display: none;
+        }
+
+/*iPhone X (Portrait) */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-height: 812px) 
-  and (-webkit-device-pixel-ratio: 2)
-  and (orientation: portrait) {  {
-    #aries, #taurus, #gemini, #cancer, #leo, #virgo, #libra, #scorpio, #sagittarius, #capricorn, #aquarius, #pisces {
+  and (orientation: portrait) {  
+    #aries, #taurus, #gemini, #cancer, #leo, #virgo, #libra, #scorpio, #sagittarius, #capricorn, #aquarius, #pisces, #constellation-video {
              display: none;
         }
     #sagittarius2 {
           display: block;
+          margin-left: auto;
+          margin-right: auto;
     }
+
+  .card-front {
+  width: 800px;
+  height: 1300px;
+  background-color: #333;
+  border-radius: 4%;
+    left: 80px;
+    top: 350px;
 }
 
+.card-front-bg {
+  width: 800px;
+  height: 1300px;
+  border-radius: 4%;
+  background-size: cover;
+  justify-content: center;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+    left: 80px;
+     top: 350px;
+}
 
+.card-back { 
+   width: 800px;
+  height: 1300px;
+  background-color: linear-gradient(141deg, rgba(92,37,141,.5) 0%, rgba(67,137,162,.5) 100%);
+  border-radius: 4%;
+  transform: rotateY(180deg); 
+  -webkit-transform: rotateY(180deg); 
+  overflow: hidden;
+  left: 80px;
+   top: 350px;
+}
+
+.zodiac-card {
+  margin: 0px;
+  width: 800px;
+  height: 1300px;
+  background-color: #333;
+  border-radius: 4%;
+  background-size: cover;
+  display: inline-block;
+}
+
+.zodiac-gradient {
+   width: 800px;
+  height: 1300px;
+  border-radius: 4%;
+  position: relative;
+  top: -1300px;
+}
+
+.zodiac-border {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 206px;
+  height: 356px;
+  border: 2px solid rgba(241,241,241,0);
+  border-radius: 2%;
+}
+
+.zodiac-title {
+  width: 350%;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(241,241,241,.9);
+  bottom: -900px;
+}
+
+.zodiac-info {
+  position: absolute;
+  width: 350%;
+  font-weight: 600;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: #333;
+  top: 15px;
+  left: 10px;
+}
+
+.quiz-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.quiz-questions {
+  text-align: left;
+  font-size: 25px;
+  width: 325%;
+  font-weight: 500;
+  font-family: 'Shopping';
+}
+
+}
+
+/*Projector (Landscape) */
+@media only screen 
+  and (min-device-width: 6200px) 
+  and (max-device-height: 3500px) 
+  and (orientation: landscape) {  
+
+    body {
+      background-color: white;
+    }
+
+    #aries, #taurus, #gemini, #cancer, #leo, #virgo, #libra, #scorpio, #sagittarius, #capricorn, #aquarius, #pisces, #sagittarius2 {
+             display: none;
+        }
+    video {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+
+    }
 }

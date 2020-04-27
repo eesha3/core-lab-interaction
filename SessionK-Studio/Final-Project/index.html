@@ -7,8 +7,7 @@
 </head>
 <body>
 <!-- Laptop -->
-<div style="height: 50px;"></div>
-
+<div id="container">
 <div id="aries">
   <div class="card-inside">
     <div class="card-front"><div class="card-front-bg" style="background-image:url('images/aries.png');"></div><div class="zodiac-gradient"><div class="zodiac-border"><div class="zodiac-title">ARIES<br>Mar 21 - Apr 20</div></div></div></div>
@@ -56,9 +55,7 @@
     </div>
   </div>
 </div>
-
-<div style="height: 50px;"></div>
-
+s
 <div id="leo">
   <div class="card-inside">
     <div class="card-front"><div class="card-front-bg" style="background-image:url('images/leo.jpg');"></div><div class="zodiac-gradient"><div class="zodiac-border"><div class="zodiac-title">LEO<br>Jul 23 - Aug 22</div></div></div></div>
@@ -154,6 +151,7 @@
     </div>
   </div>
 </div>
+</div id="container">
 
 <!-- phone -->
 <div id="sagittarius2">
@@ -161,11 +159,37 @@
     <div class="card-front"><div class="card-front-bg" style="background-image:url('images/sagittarius.jpg');"></div><div class="zodiac-gradient"><div class="zodiac-border"><div class="zodiac-title">Sagittarius<br>Nov 23 - Dec 21</div></div></div></div>
     <div class="card-back"><div class="zodiac-border">
       <div class="zodiac-info"> 
-        Are you really a sagittarius?
+        <div class="quiz-title"> Are you really a sagittarius? <br><br><br><br></div>
+        <form class="quiz-questions">
+        <input type="checkbox" id="question1" name="question1">
+        <label for="question1"> You love starting new projects</label><br><br><br>
+        <input type="checkbox" id="question2" name="question2">
+        <label for="question2"> You are optimistic</label><br><br><br>
+        <input type="checkbox" id="question3" name="question3">
+        <label for="question3"> You are spontaneous</label><br><br><br>
+        <input type="checkbox" id="question4" name="question4">
+        <label for="question4"> You get along with all types of personalities</label><br><br><br>
+        <input type="checkbox" id="question5" name="question5">
+        <label for="question5"> You prefer to be outside</label><br><br><br>
+        <input type="checkbox" id="question6" name="question6">
+        <label for="question6"> You are a natural born leader</label><br><br><br>
+        <input type="checkbox" id="question7" name="question7">
+        <label for="question7"> You call it like you see it</label><br><br><br>
+        <input type="checkbox" id="question8" name="question8">
+        <label for="question8"> You work best under pressure</label><br><br><br>
+        <input type="checkbox" id="question9" name="question9">
+        <label for="question9"> You're an extrovert</label><br><br><br>
+        <input type="checkbox" id="question10" name="question10">
+        <label for="question10"> You tend to go overboard with presents</label><br><br><br>
+        </form>
       </div>
     </div>
     </div>
   </div>
 </div>
 
+<!-- projector -->
+<video id="constellation-video" autoplay muted controls="">
+  <source src="images/constellation-video.mp4" type="video/mp4">
+</video>
 

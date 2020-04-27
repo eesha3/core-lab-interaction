@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+
+body {
+background-color: #448089;
+}
+
+h1 {
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-size: 3em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ text-transform: uppercase;
+ margin-top: 15px;
+ color: white;
+ text-align: center;
+ width: 100vw;
+  font-weight: normal;
+}
+
+.container {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+
+  }
+
+.gallery {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+	width: 20vw;
+	height: 15vw;
+}
+
+
+p {
+font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-size: 0.7rem;
+ letter-spacing: .2em;
+ line-height: 1.8em;
+ text-transform: uppercase;
+ margin-top: 15px;
+ color: white;
+ width: 60vw;
+ margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav {
+font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-size: 0.5em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ text-transform: uppercase;
+ color: white;
+ text-decoration-color: white;
+}
+
+
+
+@media only screen 
+  and (max-device-width: 375px) {  
+    body {
+          background-color: black;
+    }
+
+    p {
+    	font-size: 0.5rem;
+    	 width: 80vw;
+    }
+
+    h1 {
+        font-size: 1.8em;
+}
+
+   @media only screen
+      and (min-device-width:1440px)
+
+  {
+      body{
+    
+        background-color: grey;
+
+        }
+  }
