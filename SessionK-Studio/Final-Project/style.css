@@ -8,15 +8,18 @@ body {
   position: center;
 }
 */
-.container {
+#container {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+width: 100%;
+display: flex;
+height: 100%;
+flex-wrap: wrap;
 }
 
 #aries, #taurus, #gemini, #cancer, #leo, #virgo, #libra, #scorpio, #sagittarius, #capricorn, #aquarius, #pisces { 
-  display: inline-block; 
+ /* display: inline-block;*/ 
   width: 250px;
   height: 400px;
   margin: 50px 25px;
@@ -157,7 +160,7 @@ body {
 
 #pisces .zodiac-gradient { background: linear-gradient(141deg, rgba(54,209,220,.5) 0%, rgba(91,134,229,.5) 100%); }
 
-#sagittarius2 .zodiac-gradient { background: linear-gradient(141deg, rgba(92,37,141,.5) 0%, rgba(67,137,162,.5) 100%); }
+#sagittarius2 .zodiac-gradient { background: linear-gradient(141deg, rgba(252,53,76,.5) 0%, rgba(10,191,188,.5) 100%); }
 
 
 #sagittarius2 {
@@ -181,6 +184,19 @@ video {
           margin-left: auto;
           margin-right: auto;
     }
+
+  body {
+    background-color: #d2beaf;
+  }
+
+h3 {
+  text-align: center;
+  font-family: 'Sacramento';
+  text-transform: lowercase;
+  font-size: 90px;
+  margin-bottom: 0;
+  color: #ae927e;
+}
 
   .card-front {
   width: 800px;
@@ -206,7 +222,7 @@ video {
 .card-back { 
    width: 800px;
   height: 1300px;
-  background-color: linear-gradient(141deg, rgba(92,37,141,.5) 0%, rgba(67,137,162,.5) 100%);
+  background-color: #f1eade;
   border-radius: 4%;
   transform: rotateY(180deg); 
   -webkit-transform: rotateY(180deg); 
@@ -247,7 +263,7 @@ video {
   width: 350%;
   font-family: 'Poppins';
   font-weight: 600;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   letter-spacing: 2px;
   color: rgba(241,241,241,.9);
@@ -269,18 +285,32 @@ video {
 
 .quiz-title {
   text-align: center;
-  text-transform: uppercase;
+  font-family: 'Yellowtail';
+  text-transform: lowercase;
+  font-size: 60px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  color: #8D6C69;
 }
 
 .quiz-questions {
   text-align: left;
-  font-size: 25px;
+  font-size: 35px;
   width: 325%;
   font-weight: 500;
-  font-family: 'Shopping';
+  font-family: 'RogueScript';
+  text-transform: lowercase;
+  color: #947b6a;
+}
+
+.quiz-image {
+  z-index: -1;
+  position: fixed;
+top: 1075px;
 }
 
 }
+
 
 /*Projector (Landscape) */
 @media only screen 
@@ -290,6 +320,7 @@ video {
 
     body {
       background-color: white;
+      margin-top: 0;
     }
 
     #aries, #taurus, #gemini, #cancer, #leo, #virgo, #libra, #scorpio, #sagittarius, #capricorn, #aquarius, #pisces, #sagittarius2 {
